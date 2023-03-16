@@ -1,0 +1,11 @@
+class Triagle extends Shape{
+	private int B;
+
+	public Triagle(int B){
+		super("Triagle",B);
+	}
+
+	public double computeArea(){
+		return ((double)super.getEmvadon()/2);
+	}
+}

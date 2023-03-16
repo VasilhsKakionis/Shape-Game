@@ -1,0 +1,50 @@
+abstract class Shape{
+	private String tupos;
+	private int emvadon;
+
+	public Shape(String tupos,int emvadon){
+		this.tupos = tupos;
+		this.emvadon = emvadon;
+	}
+
+	public abstract int computeArea();
+
+	public boolean sameArea(Shape shape){
+		if (this.emvadon == shape.getEmvadon()){
+			return true;
+		}
+		return false;
+	}
+
+	public boolean sameType(Shape shape){
+		if (this.tupos == shape.getTupos()){
+			return true;
+		}
+		return false;
+	}
+
+	public String toString(){
+		return ("Type is: " + tupos + " and the area is: " + emvadon);
+	}
+	
+	public String getTupos(){
+		return tupos;
+	}
+
+	public int getEmvadon(){
+		return emvadon;
+	}
+
+	public void setTupos(String tupos){
+		this.tupos = tupos;
+	}
+
+	public void setEmvadon(int emvadon){
+		this.emvadon = emvadon;
+	}	
+}
+
+
+
+
+
